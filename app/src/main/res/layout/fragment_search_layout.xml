@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:id="@+id/search_btn"
+            android:paddingLeft="20sp"
+            android:paddingRight="20dp"
+            android:text="取消" />
+        <EditText
+            android:id="@+id/search_input_box"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:imeOptions="actionSearch"
+            android:focusable="true"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_toLeftOf="@+id/search_btn"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"
+            android:hint="@string/text_search_tips"
+            android:textSize="14sp"
+            android:background="@drawable/shape_edit_box_bg"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:visibility="gone"
+            android:id="@+id/search_clean_btn"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/search_btn"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/remove"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/base_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
