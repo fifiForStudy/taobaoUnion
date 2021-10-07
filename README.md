@@ -1,2 +1,2 @@
 # taobaoUnion
-to receives the coupon of taobao
+to receives the ticket of taobao
